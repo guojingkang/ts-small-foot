@@ -1,0 +1,45 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "@typescript-eslint",
+      "eslint-plugin-import"
+  ],
+  "rules": {
+      "indent": ["error", 4, {"SwitchCase": 1}],
+      "key-spacing": "error",
+      "comma-spacing":"error",
+      "keyword-spacing": "error",
+      "semi-spacing": "error",
+      "space-infix-ops": "error",
+      "object-curly-spacing": ["error", "always"],
+      "prefer-const": "error",
+      "arrow-spacing": "error",
+      "no-console": "error",
+      "no-var": "error",
+      "semi":"error",
+      "max-len":["error",{ "code": 120}],
+      "import/order": [
+          "error",
+          {
+              "groups": ["builtin", "external", "internal", "parent", "sibling", "index"]
+          }
+      ],
+      "quotes": ["error", "single"],
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-ts-ignore": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/explicit-module-boundary-types": ["error",{"allowArgumentsExplicitlyTypedAsAny":true}]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2017",
+    "outDir": "lib",
+    "lib": [ "es2017", "DOM" ],
+    "allowJs": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    // "declaration": true,
+    // "declarationDir": "declaration"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "bin",
+    "node_modules"
+  ]
+}
